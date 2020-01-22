@@ -1,11 +1,11 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const routes = require('./routes');
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import routes from './routes';
 
-const app = express();
+import app from express();
 
-mongoose.connect('mongodb+srv://DevLopes:Dev@cluster0-hnjij.mongodb.net/week10?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://DevLopes:lopes@cluster0-hnjij.mongodb.net/week10?retryWrites=true&w=majority', {
    useNewUrlParser: true,
    useUnifiedTopology: true
 })
